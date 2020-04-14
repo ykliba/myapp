@@ -1,0 +1,21 @@
+.wrapper
+  .box
+    .box__logo
+      = image_tag "logo1.png",class: "main_logo"
+    %ul.icons
+      %li.icons__review
+        = link_to do
+          = icon("fas","record-vinyl") 
+      %li.icons__event
+        = link_to do
+          = icon("fas","music")
+      %li.icons__gear
+        = link_to do
+          = icon("fas","guitar")
+    .box__user
+      %ul.link
+        %li.link__log
+          = link_to "Log in"
+        %li.link__sign
+          = link_to "Sign up"
+      

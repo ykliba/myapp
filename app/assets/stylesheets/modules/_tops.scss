@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  
+  
+    
+    .box {
+      // background-color: darkgray;
+      height: 400px;
+      width: 300px;
+     
+      
+      &__logo {
+        
+        .main_logo {
+          width: 120px;
+          height: 120px;
+          margin-left: 90px;
+          
+        }
+      }
+     
+      .icons {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        padding-top: 20px;
+        margin-top: 30px;
+        
+        
+        &__review {
+          a {
+            color: white;
+          }
+        }
+          &__event {
+            margin-right: 50px;
+            margin-left: 50px;
+          a {
+            color: white;
+          }
+        }  
+        &__gear {
+          a {
+            color: white;
+          }
+        } 
+      }
+      &__user {
+        height: 50px;
+        margin-top: 90px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        .link {
+          display: flex;
+         
+          
+          &__log {
+            border: solid 2px white;
+            margin-left: 20px;
+            padding: 5px;
+            width: 120px;
+            background-color: slategrey;
+            
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+          &__sign {
+            border: solid 2px white;
+            margin-left: 20px;
+            padding: 5px;
+            width: 120px;
+            background-color: slategrey;
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
+        } 
+        
+       
+      }
+    }
+}
