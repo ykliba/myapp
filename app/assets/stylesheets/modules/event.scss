@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper_event {
+  width: 100vw;
+  height: 100vh;
+  
+  .event_header {
+    height: 100px;
+    background-color: darkcyan;
+    &__box {
+      display: flex;
+      .event_logo_box {
+        
+        .event_logo {
+          height: 80px;
+          width: 80px;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+          margin-left: 60px;
+        }
+        .event_user {
+          height: 30px;
+          width: 100px;
+          background-color: indianred;
+
+        }
+      }
+    }
+  }
+  .event_low {
+    height: calc(100vh - 100px);
+    display: flex;
+    .event_left {
+      width: 100px;
+      background-color: lime;
+    }
+    .event_main {
+      width: calc(100vw - 200px);
+
+    }
+    .event_right {
+      width: 100px;
+      background-color: magenta;
+    }
+    
+  }
+}
+

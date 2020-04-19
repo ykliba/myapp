@@ -4,18 +4,11 @@
       = image_tag "logo1.png",class: "main_logo"
     %ul.icons
       %li.icons__review
-        = link_to do
-          = icon("fas","record-vinyl") 
+        = link_to "Music", reviews_path, class: "top_music"
       %li.icons__event
-        = link_to do
-          = icon("fas","music")
+        = link_to "Event", events_path, class: "top_event"
       %li.icons__gear
-        = link_to do
-          = icon("fas","guitar")
-    .box__user
-      %ul.link
-        %li.link__log
-          = link_to "Log in"
-        %li.link__sign
-          = link_to "Sign up"
+        = link_to "Gear", gears_path, class: "top_gear"
+    
+          
       

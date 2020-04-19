@@ -1,0 +1,38 @@
+.wrapper_review
+  .header
+    .header__box
+      %h1.reviews_logo_box
+        = link_to image_tag("logo1.png",class: "reviews_logo"), root_path
+      .name
+        = current_user.name
+      - if user_signed_in?
+        .user_nav
+          .user_nav__li
+            = link_to "Log out", destroy_user_session_path, method: :delete, class: "post_lo"
+          .user_nav__p
+            = link_to "Post", new_review_path, class: "post_p" 
+      - else
+        .grid
+          .grid__li
+            = link_to "Log in", new_user_session_path, class: "post_li"
+          .grid__s
+            = link_to "Sign up", new_user_registration_path, class: "post_s"
+      
+        
+  .review_low
+    .review_left
+    .review_main
+      - @reviews.each do |review|
+        %ul.review_all
+          .review_all__title
+            = review.title
+          .review_all__artist
+            = review.artist
+          .review_all__image
+            = image_tag review.image.url if review.image.present?
+      - @reviews.each do |review|
+        .review_content
+          = review.content
+      .review_comment
+      
+    .review_right

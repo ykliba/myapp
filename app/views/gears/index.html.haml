@@ -1,0 +1,22 @@
+.wrapper_gear
+  .gear_header
+    .gear_header__box
+      %h1.gear_logo_box
+        = link_to image_tag("logo1.png",class: "gear_logo"), root_path
+        
+      -# - if user_signed_in?
+        .gear_user
+          %current_user_name
+          -# %ul.review_user_info
+          -#   %li.review_mypage
+          -#     =link_to "My page"
+          -#   %li.review_logout
+          -#     =link_to "Log out"
+        .gear_post
+          =link_to "Post"
+  
+  .gear_low
+    .gear_left
+    .gear_main
+      
+    .gear_right

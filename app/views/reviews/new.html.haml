@@ -1,0 +1,29 @@
+.wrapper_review_new
+  .header_new
+    .header_new__box
+      %h1.reviews_logo_box
+        = link_to image_tag("logo1.png",class: "reviews_logo"), reviews_path 
+      %h2.recommend
+        What do you recommend ?
+  
+  .review_main_new
+    -# = form_with model: @review, local: true do |form|
+    -#   .input
+    -#     = form.text_field :image, placeholder: "Image url or Select from your file", class: 'post_4'
+    -#     -# .input__mask
+          = form.label :image, class: 'input__mask__image' do
+            = icon('fa', 'image', class: 'icon')
+            = form.file_field :image, class: 'hidden'
+
+    .review_post_box
+      = form_with model: @review, local: true do |form|
+        = form.text_field :title, placeholder: "Title", class: "post_1"
+        = form.text_field :artist, placeholder: "Artist", class: "post_2"
+        = form.text_area :content, placeholder: "Text", class: "post_3"
+        = form.text_field :image, placeholder: "Image url or Select from your file", class: 'post_4'
+        = form.label :image, class: 'post_image' do
+          = icon('fa', 'image', class: 'icon')
+          = form.file_field :image, class: 'hidden'
+        
+        .btn_box
+          = form.submit "SEND", class: "btn_box__btn"

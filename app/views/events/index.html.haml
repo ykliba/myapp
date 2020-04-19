@@ -1,0 +1,21 @@
+.wrapper_event
+  .event_header
+    .event_header__box
+      %h1.event_logo_box
+        = link_to image_tag("logo1.png",class: "event_logo"), root_path
+        
+      -# - if user_signed_in?
+        .event_user
+          %current_user_name
+          -# %ul.review_user_info
+          -#   %li.review_mypage
+          -#     =link_to "My page"
+          -#   %li.review_logout
+          -#     =link_to "Log out"
+        .event_post
+          =link_to "Post"
+  
+  .event_low
+    .event_left
+    .event_main
+    .event_right

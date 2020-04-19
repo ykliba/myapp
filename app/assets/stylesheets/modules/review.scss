@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper_review {
+  width: 100vw;
+  height: 100vh;
+  
+  .header {
+    height: 100px;
+    background-color: black;
+    &__box {
+      display: flex;
+      .reviews_logo_box {
+        .reviews_logo {
+          height: 80px;
+          width: 80px;
+          margin-top: 10px;
+          margin-left: 77px;
+        }
+      } 
+      .name {
+        color: white;
+        margin-top: 70px;
+        margin-left: 20px;
+      }
+      
+      .user_nav {
+        width: 70px;
+        height: 70px;
+        margin: 0 0 0 auto;
+        margin-right: 80px;
+        margin-top: 20px;
+        &__li {
+          margin-bottom: 10px;
+          .post_lo {
+            color: mediumspringgreen;
+            text-decoration: none;
+          }
+        }
+        &__p {
+          .post_p {
+            color: mediumspringgreen;
+            margin-top: 10px;
+            text-decoration: none;
+          }
+        }
+      }
+      
+      .grid {
+        width: 70px;
+        height: 70px;
+        margin: 0 0 0 auto;
+        margin-right: 80px;
+        margin-top: 20px;
+        // background-color: white;
+        &__li {
+          margin-bottom: 10px;
+          .post_li {
+            color: mediumspringgreen;
+            text-decoration: none;
+          }
+        }
+        &__s {
+          .post_s {
+            color: mediumspringgreen;
+            margin-top: 10px;
+            text-decoration: none;
+          }
+        }
+      }
+      
+    }
+  }
+  .review_low {
+    height: calc(100vh - 100px);
+    display: flex;
+    .review_left {
+      width: 150px;
+      background-image: url("wok3.jpg");
+    }
+    
+    .review_main {
+      width: calc(100vw - 300px);
+      display: flex;
+      background-color: lightgray;
+      .review_all {
+        height: calc(100% / 2);
+        width: 500px;
+        // background-color: palegoldenrod;
+        &__title {
+          height: 50px;
+          // background-color: paleturquoise;
+          line-height: 50px;
+          font-weight: bold;
+          font-size: 20px;
+          padding-left: 20px;
+        }
+        &__artist {
+          height: 30px;
+          // background-color: plum;
+          padding-left: 60px;
+          line-height: 30px;
+        }
+        &__image {
+          height: 250px;
+          width: 250px;
+          margin-left: 50px;
+          // background-color: saddlebrown;
+        }
+      }
+      .review_content {
+        height: calc(100% / 2);
+        width: 300px;
+        // background-color: sandybrown;
+        padding-top: 50px;
+      }
+      .review_comment {
+        height: calc(100% / 2);
+        width: calc(100% - 800px);
+        // background-color: seagreen;
+        
+      }
+    }
+    .review_right {
+      width: 150px;
+      background-image: url("wok4.jpg");
+    }
+    
+  }
+}
+
+.wrapper_review_new {
+  width: 100vw;
+  height: 100vh;
+  .header_new {
+    height: 100px;
+    background-color: dimgray;
+    &__box {
+      display: flex;
+      .reviews_logo_box {
+        .reviews_logo {
+          height: 80px;
+          width: 80px;
+          margin-top: 10px;
+          margin-left: 60px;
+        }
+      } 
+      .recommend {
+        margin: 0 auto;
+        margin-right: 503px;
+        line-height: 100px;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+  .review_main_new {
+    height: calc(100vh - 100px);
+    .review_post_box {
+      width: 500px;
+      margin: 0 auto;
+      .post_1 {
+        width: 500px;
+        height: 70px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .post_2 {
+        width: 500px;
+        height: 70px;
+        margin-bottom: 30px;
+      }
+      .post_3 {
+        width: 500px;
+        height: 200px;
+        margin-bottom: 30px;
+      }
+      .post_4 {
+        width: 500px;
+        height: 70px;
+      }
+      .post_image {
+        .icon {
+
+        }
+        .hidden {
+          display: none;
+        }
+      }
+      .btn_box {
+        width: 500px;
+        height: 70px;
+        &__btn {
+          height: 50px;
+          width: 200px;
+          margin-top: 25px;
+          margin-left: 150px;
+          background-color: yellow;
+          border: 1px solid;
+          font-weight: bold;
+          box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+        }
+      }
+    }
+  }
+}
+
+.wrapper_create {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightslategrey;
+  padding-top: 170px;
+  .contents_row {
+    .success {
+      width: 800px;
+      height: 300px;
+      margin: 0 auto;
+      border: 2px solid  white;
+      .thanks {
+        text-align: center;
+        line-height: 300px;
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+      }
+    }
+    .back {
+      margin: 0 auto;
+      width: 800px;
+      height: 200px;
+      .back_logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 350px;
+        margin-top: 25px;
+      }
+    }
+    
+  }
+}

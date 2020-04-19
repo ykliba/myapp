@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper_gear {
+  width: 100vw;
+  height: 100vh;
+  
+  .gear_header {
+    height: 100px;
+    background-color: navy;
+    &__box {
+      display: flex;
+      .gear_logo_box {
+        
+        .gear_logo {
+          height: 80px;
+          width: 80px;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+          margin-left: 60px;
+        }
+        .gear_user {
+          height: 30px;
+          width: 100px;
+          background-color: indianred;
+
+        }
+      }
+    }
+  }
+  .gear_low {
+    height: calc(100vh - 100px);
+    display: flex;
+    .gear_left {
+      width: 100px;
+      background-color: lime;
+    }
+    .gear_main {
+      width: calc(100vw - 200px);
+
+    }
+    .gear_right {
+      width: 100px;
+      background-color: magenta;
+    }
+    
+  }
+}
+
